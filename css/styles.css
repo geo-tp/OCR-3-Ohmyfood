@@ -7,10 +7,7 @@ body {
 
 h1 {
   font-family: "Shrikhand", cursive;
-}
-
-h2 {
-  font-family: "Shrikhand", cursive;
+  font-size: 26px;
 }
 
 h3 {
@@ -30,6 +27,7 @@ h5 {
   align-items: center;
   justify-content: center;
   background-color: #eaeaea;
+  color: #353535;
 }
 .banner-location__city {
   font-weight: bold;
@@ -38,6 +36,17 @@ h5 {
 .banner-location__icon {
   font-size: 16px;
   padding-right: 5px;
+}
+
+.button-explore {
+  background: linear-gradient(170deg, rgba(255, 121, 218, 0.8) 0%, rgba(215, 108, 219, 0.8) 40%, rgba(170, 94, 220, 0.8) 80%, rgba(155, 89, 220, 0.8) 100%);
+  padding: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 35px;
 }
 
 .header {
@@ -58,6 +67,28 @@ h5 {
   height: 250px;
   width: 100%;
   object-fit: cover;
+}
+
+.reserve {
+  text-align: center;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #f6f6f6;
+  padding: 30px;
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+.reserve__title {
+  font-family: "Roboto", sans-serif;
+  margin-top: 0;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.reserve__subtitle {
+  padding-bottom: 15px;
+  font-size: 20px;
+  color: #353535;
 }
 
 /*# sourceMappingURL=styles.css.map */
