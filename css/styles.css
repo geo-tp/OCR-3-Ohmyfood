@@ -10,6 +10,10 @@ h1 {
   font-size: 26px;
 }
 
+h2 {
+  font-size: 26px;
+}
+
 h3 {
   font-family: "Shrikhand", cursive;
 }
@@ -32,10 +36,11 @@ h5 {
 .banner-location__city {
   font-weight: bold;
   padding: 5px;
+  font-size: 18px;
 }
 .banner-location__icon {
-  font-size: 16px;
-  padding-right: 5px;
+  font-size: 18px;
+  padding-right: 15px;
 }
 
 .button-explore {
@@ -47,6 +52,39 @@ h5 {
   font-size: 18px;
   font-weight: 600;
   border-radius: 35px;
+}
+
+.operation-row {
+  background-color: #f6f6f6;
+  height: 90px;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-radius: 30px;
+}
+.operation-row__step {
+  background-color: #9356dc;
+  color: white;
+  padding: 3px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  border-radius: 100%;
+  position: relative;
+  left: -3%;
+  margin-right: 15px;
+}
+.operation-row__icon {
+  font-size: 20px;
+  margin-right: 20px;
+  color: #353535;
+}
+.operation-row__text {
+  font-size: 18px;
 }
 
 .header {
@@ -69,6 +107,14 @@ h5 {
   object-fit: cover;
 }
 
+.operations {
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+.operations__title {
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
 .reserve {
   text-align: center;
   margin: 0 auto;
