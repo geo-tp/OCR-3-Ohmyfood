@@ -184,8 +184,9 @@ h5 {
 }
 
 .main-wrapper {
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
+  background-color: #f6f6f6;
 }
 
 .header {
@@ -275,7 +276,7 @@ h5 {
 
 .menu {
   border-radius: 30px 30px 0px 0px;
-  transform: translateY(-40px);
+  transform: translateY(-50px);
   background-color: #f6f6f6;
 }
 .menu__title {
@@ -292,8 +293,17 @@ h5 {
   padding-right: 20px;
 }
 .menu__subtitle {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
+  padding-bottom: 5px;
+  margin-bottom: 0;
+}
+.menu__underline {
+  margin-left: 15px;
+  width: 50px;
+  height: 4px;
+  background-color: #99e2d0;
+  margin-bottom: 25px;
 }
 .menu__dishes {
   display: flex;
