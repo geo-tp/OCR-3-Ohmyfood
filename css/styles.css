@@ -25,6 +25,21 @@ h5 {
   font-family: "Shrikhand", cursive;
 }
 
+.banner-location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eaeaea;
+}
+.banner-location__city {
+  font-weight: bold;
+  padding: 5px;
+}
+.banner-location__icon {
+  font-size: 16px;
+  padding-right: 5px;
+}
+
 .header {
   display: flex;
   justify-content: center;
