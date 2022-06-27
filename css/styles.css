@@ -156,6 +156,33 @@ h5 {
   font-size: 20px;
 }
 
+.footer {
+  background-color: #353535;
+  color: white;
+  padding-top: 5px;
+  padding-left: 20px;
+  font-weight: 500;
+  font-size: 18;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+.footer__title {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.footer__text {
+  margin: 5px;
+}
+.footer__text span {
+  padding-left: 15px;
+}
+.footer__text a {
+  text-decoration: none;
+  color: white;
+  margin-left: 0;
+}
+
 .background img {
   height: 250px;
   width: 100%;
