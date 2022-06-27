@@ -2,5 +2,14 @@
 @import "./utils/mixins";
 @import "./base/global";
 @import "./base/typography";
+@import "./components/banner-location";
+@import "./components/button-explore";
+@import "./components/operation-row";
+@import "./components/restaurant-card";
+@import "./containers/main-wrapper";
 @import "./layouts/header";
 @import "./layouts/footer";
+@import "./layouts/background";
+@import "./layouts/explore";
+@import "./layouts/operations";
+@import "./layouts/restaurants";
