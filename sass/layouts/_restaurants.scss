@@ -1,0 +1,10 @@
+.restaurants {
+  &__title {
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

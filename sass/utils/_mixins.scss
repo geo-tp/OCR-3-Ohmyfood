@@ -1,0 +1,11 @@
+@mixin tiny-shadow {
+  box-shadow: 0px 5px 15px 5px lighten(lightgrey, 5%);
+}
+
+@mixin small-shadow {
+  box-shadow: 0px 10px 20px 5px lightgrey;
+}
+
+@mixin medium-shadow {
+  box-shadow: 0px 20px 30px 5px darken(lightgrey, 10%);
+}
