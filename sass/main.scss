@@ -3,9 +3,10 @@
 @import "./base/global";
 @import "./base/typography";
 @import "./components/banner-location";
-@import "./components/button-explore";
+@import "./components/button-submit";
 @import "./components/operation-row";
 @import "./components/restaurant-card";
+@import "./components/menu-card";
 @import "./containers/main-wrapper";
 @import "./layouts/header";
 @import "./layouts/footer";
@@ -14,3 +15,4 @@
 @import "./layouts/operations";
 @import "./layouts/restaurants";
 @import "./layouts//reserve";
+@import "./layouts/menu";
