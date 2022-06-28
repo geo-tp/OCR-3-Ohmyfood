@@ -42,7 +42,9 @@
         src="./images/logo/ohmyfood@2x.svg"
         alt="logo ohmyfood"
       />
-      <i class="header__arrow fas fa-arrow-left"></i>
+      <a class="header__arrow" href="index.html">
+        <i class="fas fa-arrow-left"></i
+      ></a>
     </header>
 
     <main class="main-wrapper">
@@ -57,7 +59,7 @@
           <h1 class="menu__title__restaurant-name">Le délice des sens</h1>
           <div class="menu__title__heart hearts">
             <i class="hearts__icon hearts__icon--empty far fa-heart"></i>
-            <i class="hearts__icon hearts__icon--fillfulled fas fa-heart"></i>
+            <i class="hearts__icon hearts__icon--fillfulled fa fa-heart"></i>
           </div>
         </div>
 
@@ -65,19 +67,33 @@
         <div class="menu__underline"></div>
         <div class="menu__dishes">
           <a href="#" class="menu-card">
-            <p class="menu-card__dish-name">Tartare de thon</p>
-            <div class="menu-card__bottom">
-              <p class="menu-card__bottom__description">Assaisonné au yuzu</p>
-              <p class="menu-card__bottom__price">25€</p>
+            <div class="menu-card__infos">
+              <p class="menu-card__infos__dish-name">Tartare de thon</p>
+              <div class="menu-card__infos__bottom">
+                <p class="menu-card__infos__bottom__description">
+                  Assaisonné au yuzu
+                </p>
+                <p class="menu-card__infos__bottom__price">25€</p>
+              </div>
+            </div>
+            <div class="menu-card__checkbox">
+              <i class="menu-card__icon fas fa-check-circle"></i>
             </div>
           </a>
           <a href="#" class="menu-card">
-            <p class="menu-card__dish-name">Bouchée de homard croustillant</p>
-            <div class="menu-card__bottom">
-              <p class="menu-card__bottom__description">
-                Et sa farandole de petits légumes
+            <div class="menu-card__infos">
+              <p class="menu-card__infos__dish-name">
+                Bouchée de homard croustillant
               </p>
-              <p class="menu-card__bottom__price">35€</p>
+              <div class="menu-card__infos__bottom">
+                <p class="menu-card__infos__bottom__description">
+                  Et sa farandole de petits légumes
+                </p>
+                <p class="menu-card__infos__bottom__price">35€</p>
+              </div>
+            </div>
+            <div class="menu-card__checkbox">
+              <i class="menu-card__icon fas fa-check-circle"></i>
             </div>
           </a>
           <a href="#" class="menu-card">

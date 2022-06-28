@@ -19,6 +19,16 @@
     transform: scale(1);
   }
 }
+@keyframes appearFromRight {
+  from {
+    width: 0%;
+    flex-basis: 0%;
+  }
+  to {
+    width: 20%;
+    flex-basis: 20%;
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -174,29 +184,68 @@ h5 {
   border-radius: 20px;
   flex-basis: 85%;
   padding-left: 20px;
-  padding-right: 20px;
   margin-bottom: 20px;
   border: 1px solid #eaeaea;
+  display: flex;
   box-shadow: 0px 5px 15px 5px #e0e0e0;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
-.menu-card__dish-name {
+.menu-card:hover .menu-card__checkbox {
+  flex-basis: 20%;
+}
+.menu-card:hover .menu-card__checkbox .menu-card__icon {
+  visibility: visible;
+  opacity: 1;
+  transform: rotate(0deg);
+}
+.menu-card__infos {
+  flex-basis: 100%;
+}
+.menu-card__infos__dish-name {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 5px;
   margin-top: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 80%;
+  text-overflow: ellipsis;
 }
-.menu-card__bottom {
+.menu-card__infos__bottom {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  padding-right: 30px;
 }
-.menu-card__bottom__description {
+.menu-card__infos__bottom__description {
   margin-top: 0;
   font-weight: 300;
+  white-space: nowrap;
+  width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.menu-card__bottom__price {
+.menu-card__infos__bottom__price {
   margin-top: 0;
   font-weight: bold;
+}
+.menu-card__checkbox {
+  transition: all 600ms;
+  display: flex;
+  width: 0;
+  flex-basis: 0;
+  background-color: #99e2d0;
+  border-radius: 0px 20px 20px 0px;
+  justify-content: center;
+  align-items: center;
+}
+.menu-card__icon {
+  opacity: 0;
+  transition: all 600ms;
+  visibility: hidden;
+  transform: rotate(-180deg);
+  color: white;
+  font-size: 32px;
 }
 
 .main-wrapper {
@@ -219,19 +268,18 @@ h5 {
   font-size: 32px;
   cursor: pointer;
 }
-.hearts__icon--empty {
-  color: black;
-}
 .hearts__icon--fillfulled {
   color: #ff79da;
   opacity: 0;
-  transition: all 1s;
+  transition: all 200ms;
   font-size: 34px;
 }
 .hearts__icon--fillfulled:hover {
+  transition: opacity 500ms;
   opacity: 1;
   transform: scale(1);
-  animation: heart-beat 600ms linear;
+  animation-delay: 300ms;
+  animation: heart-beat 700ms linear;
 }
 
 .header {
@@ -244,8 +292,10 @@ h5 {
 .header__arrow {
   position: absolute;
   left: 5%;
+}
+.header__arrow svg {
   color: black;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .footer {
@@ -284,12 +334,14 @@ h5 {
 .operations {
   padding-top: 30px;
   padding-bottom: 40px;
+  background-color: white;
 }
 .operations__title {
   padding-bottom: 10px;
 }
 .restaurants {
-  margin-bottom: 50px;
+  padding-top: 30px;
+  padding-bottom: 50px;
 }
 .restaurants__cards {
   display: flex;

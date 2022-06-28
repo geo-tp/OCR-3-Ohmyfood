@@ -13,25 +13,18 @@
     font-size: 32px;
     cursor: pointer;
 
-    &--empty {
-      color: black;
-
-      // &:hover {
-      //   display: none;
-      // }
-    }
-
     &--fillfulled {
       color: $secondary;
       opacity: 0;
-      transition: all 1s;
+      transition: all 200ms;
       font-size: 34px;
 
       &:hover {
+        transition: opacity 500ms;
         opacity: 1;
         transform: scale(1);
-
-        animation: heart-beat 600ms linear;
+        animation-delay: 300ms;
+        animation: heart-beat 700ms linear;
         // animation-iteration-count: 3;
       }
     }
