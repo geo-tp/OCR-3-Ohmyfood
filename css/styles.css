@@ -226,6 +226,7 @@ h5 {
 }
 .menu-card__infos__bottom {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding-right: 30px;
 }
@@ -240,7 +241,6 @@ h5 {
 .menu-card__infos__bottom__price {
   margin-top: 0;
   font-weight: bold;
-  background-color: pink;
 }
 .menu-card__checkbox {
   transition: all 600ms;
@@ -282,7 +282,11 @@ h5 {
   cursor: pointer;
 }
 .hearts__icon--fillfulled {
-  color: #ff79da;
+  background: linear-gradient(to bottom left, #9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
   opacity: 0;
   transition: all 200ms;
   font-size: 34px;

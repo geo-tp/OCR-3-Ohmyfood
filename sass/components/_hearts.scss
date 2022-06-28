@@ -14,7 +14,11 @@
     cursor: pointer;
 
     &--fillfulled {
-      color: $secondary;
+      background: linear-gradient(to bottom left, #9356dc, #ff79da);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      color: transparent;
       opacity: 0;
       transition: all 200ms;
       font-size: 34px;

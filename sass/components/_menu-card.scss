@@ -52,7 +52,7 @@
 
     &__bottom {
       display: flex;
-      //   justify-content: space-between;
+      justify-content: space-between;
       align-items: center;
       padding-right: 30px;
 
@@ -69,7 +69,6 @@
       &__price {
         margin-top: 0;
         font-weight: bold;
-        background-color: pink;
       }
     }
   }
