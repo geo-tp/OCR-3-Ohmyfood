@@ -1,5 +1,6 @@
 @import "./utils/variables";
 @import "./utils/mixins";
+@import "./utils/keyframes";
 @import "./base/global";
 @import "./base/typography";
 @import "./components/banner-location";
@@ -8,6 +9,7 @@
 @import "./components/restaurant-card";
 @import "./components/menu-card";
 @import "./containers/main-wrapper";
+@import "./components/hearts";
 @import "./layouts/header";
 @import "./layouts/footer";
 @import "./layouts/background";
