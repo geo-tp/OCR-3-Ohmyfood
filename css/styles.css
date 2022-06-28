@@ -190,6 +190,16 @@ h5 {
   box-shadow: 0px 5px 15px 5px #e0e0e0;
   text-overflow: ellipsis;
   overflow: hidden;
+  position: relative;
+}
+.menu-card:hover .menu-card__infos {
+  max-width: 80%;
+}
+.menu-card:hover .menu-card__infos__bottom__description {
+  position: relative;
+}
+.menu-card:hover .menu-card__infos__dish-name {
+  position: relative;
 }
 .menu-card:hover .menu-card__checkbox {
   flex-basis: 20%;
@@ -201,6 +211,8 @@ h5 {
 }
 .menu-card__infos {
   flex-basis: 100%;
+  max-width: 100%;
+  transition: all 600ms;
 }
 .menu-card__infos__dish-name {
   font-size: 20px;
@@ -209,8 +221,8 @@ h5 {
   margin-top: 10px;
   white-space: nowrap;
   overflow: hidden;
-  width: 80%;
   text-overflow: ellipsis;
+  max-width: 100%;
 }
 .menu-card__infos__bottom {
   display: flex;
@@ -221,13 +233,14 @@ h5 {
   margin-top: 0;
   font-weight: 300;
   white-space: nowrap;
-  width: 80%;
   overflow: hidden;
+  max-width: 100%;
   text-overflow: ellipsis;
 }
 .menu-card__infos__bottom__price {
   margin-top: 0;
   font-weight: bold;
+  background-color: pink;
 }
 .menu-card__checkbox {
   transition: all 600ms;

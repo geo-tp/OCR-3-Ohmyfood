@@ -8,14 +8,23 @@
   @include tiny-shadow;
   text-overflow: ellipsis;
   overflow: hidden;
+  position: relative;
 
   &:hover {
+    & .menu-card__infos {
+      max-width: 80%;
+    }
+
     & .menu-card__infos__bottom__description {
+      position: relative;
+    }
+
+    & .menu-card__infos__dish-name {
+      position: relative;
     }
 
     & .menu-card__checkbox {
       //   display: flex;
-      //   width: 20%;
       flex-basis: 20%;
 
       & .menu-card__icon {
@@ -27,6 +36,8 @@
   }
   &__infos {
     flex-basis: 100%;
+    max-width: 100%;
+    transition: all 600ms;
 
     &__dish-name {
       font-size: 20px;
@@ -35,8 +46,8 @@
       margin-top: 10px;
       white-space: nowrap;
       overflow: hidden;
-      width: 80%;
       text-overflow: ellipsis;
+      max-width: 100%;
     }
 
     &__bottom {
@@ -49,8 +60,8 @@
         margin-top: 0;
         font-weight: 300;
         white-space: nowrap;
-        width: 80%;
         overflow: hidden;
+        max-width: 100%;
 
         text-overflow: ellipsis;
       }
@@ -58,6 +69,7 @@
       &__price {
         margin-top: 0;
         font-weight: bold;
+        background-color: pink;
       }
     }
   }
