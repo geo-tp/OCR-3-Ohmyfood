@@ -3,6 +3,9 @@
   transform: translateY(-50px);
   background-color: $alt4;
   padding-bottom: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+
   &__title {
     display: flex;
     justify-content: space-between;
@@ -36,6 +39,39 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+    & a {
+      opacity: 0;
+      animation: appear-slowly-from-top 400ms linear;
+      animation-fill-mode: forwards;
+    }
+
+    &--entrees {
+      animation-delay: 1s;
+      @for $i from 1 through 3 {
+        a:nth-child(#{$i}) {
+          animation-delay: $i * 300 + ms;
+        }
+      }
+    }
+
+    &--plats {
+      animation-delay: 1500ms;
+      @for $i from 4 through 6 {
+        a:nth-child(#{$i - 3}) {
+          animation-delay: $i * 300 + ms;
+        }
+      }
+    }
+
+    &--desserts {
+      animation-delay: 2000ms;
+      @for $i from 7 through 9 {
+        a:nth-child(#{$i - 6}) {
+          animation-delay: $i * 300 + ms;
+        }
+      }
+    }
   }
 
   &__purchase {

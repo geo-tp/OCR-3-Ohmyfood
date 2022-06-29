@@ -23,14 +23,14 @@
   }
 }
 
-@keyframes appearFromRight {
+@keyframes appear-slowly-from-top {
   from {
-    width: 0%;
-    flex-basis: 0%;
+    opacity: 0;
+    transform: translateY(-30px);
   }
 
   to {
-    width: 20%;
-    flex-basis: 20%;
+    opacity: 1;
+    transform: translateY(0px);
   }
 }

@@ -19,14 +19,14 @@
     transform: scale(1);
   }
 }
-@keyframes appearFromRight {
+@keyframes appear-slowly-from-top {
   from {
-    width: 0%;
-    flex-basis: 0%;
+    opacity: 0;
+    transform: translateY(-30px);
   }
   to {
-    width: 20%;
-    flex-basis: 20%;
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
 body {
@@ -393,6 +393,8 @@ h5 {
   transform: translateY(-50px);
   background-color: #f6f6f6;
   padding-bottom: 20px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 .menu__title {
   display: flex;
@@ -420,6 +422,47 @@ h5 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+.menu__dishes a {
+  opacity: 0;
+  animation: appear-slowly-from-top 400ms linear;
+  animation-fill-mode: forwards;
+}
+.menu__dishes--entrees {
+  animation-delay: 1s;
+}
+.menu__dishes--entrees a:nth-child(1) {
+  animation-delay: 300ms;
+}
+.menu__dishes--entrees a:nth-child(2) {
+  animation-delay: 600ms;
+}
+.menu__dishes--entrees a:nth-child(3) {
+  animation-delay: 900ms;
+}
+.menu__dishes--plats {
+  animation-delay: 1500ms;
+}
+.menu__dishes--plats a:nth-child(1) {
+  animation-delay: 1200ms;
+}
+.menu__dishes--plats a:nth-child(2) {
+  animation-delay: 1500ms;
+}
+.menu__dishes--plats a:nth-child(3) {
+  animation-delay: 1800ms;
+}
+.menu__dishes--desserts {
+  animation-delay: 2000ms;
+}
+.menu__dishes--desserts a:nth-child(1) {
+  animation-delay: 2100ms;
+}
+.menu__dishes--desserts a:nth-child(2) {
+  animation-delay: 2400ms;
+}
+.menu__dishes--desserts a:nth-child(3) {
+  animation-delay: 2700ms;
 }
 .menu__purchase {
   display: flex;
