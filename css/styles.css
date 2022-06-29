@@ -260,6 +260,11 @@ h5 {
   color: white;
   font-size: 32px;
 }
+@media screen and (min-width: 992px) {
+  .menu-card {
+    flex-basis: 65%;
+  }
+}
 
 .main-wrapper {
   padding: 0px;
@@ -429,6 +434,8 @@ h5 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
 }
 .menu__dishes a {
   opacity: 0;

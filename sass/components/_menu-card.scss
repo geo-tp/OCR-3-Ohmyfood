@@ -93,4 +93,10 @@
     color: white;
     font-size: 32px;
   }
+
+  @include laptop-design {
+    flex-basis: 65%;
+    //   margin-left: 20px;
+    //   margin-right: 20px;
+  }
 }
