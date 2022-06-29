@@ -9,4 +9,12 @@
     justify-content: center;
     flex-wrap: wrap;
   }
+
+  @include laptop-design {
+    max-width: 90%;
+    margin: 0 auto;
+    &__cards {
+      justify-content: space-between;
+    }
+  }
 }

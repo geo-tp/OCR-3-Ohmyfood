@@ -2,19 +2,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid gray;
   height: 60px;
-
+  background-color: white;
+  max-width: $max-resolution;
+  margin: 0 auto;
+  position: relative;
   &__logo {
   }
 
   &__arrow {
     position: absolute;
     left: 5%;
+    font-size: 25px;
+  }
 
-    & svg {
-      color: black;
-      font-size: 30px;
+  @include laptop-design {
+    border: 1px solid $alt2;
+    &__arrow {
+      left: 30%;
     }
   }
 }

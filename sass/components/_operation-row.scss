@@ -2,6 +2,7 @@
   background-color: $alt4;
   height: 90px;
   width: 90%;
+  max-width: 500px;
   margin: 0 auto;
   margin-bottom: 30px;
   display: flex;
@@ -41,5 +42,9 @@
 
   &__text {
     font-size: 18px;
+  }
+
+  @include laptop-design {
+    flex-basis: 30%;
   }
 }

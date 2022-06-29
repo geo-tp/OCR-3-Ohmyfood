@@ -4,4 +4,7 @@
   background-color: $alt4;
   max-width: 100%;
   height: 100%;
+  max-width: $max-resolution;
+  margin: 0 auto;
+  @include small-shadow;
 }

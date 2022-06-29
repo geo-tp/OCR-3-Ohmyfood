@@ -15,4 +15,9 @@
     font-size: 18px;
     padding-right: 15px;
   }
+
+  @include laptop-design {
+    color: white;
+    background: $tertiary;
+  }
 }

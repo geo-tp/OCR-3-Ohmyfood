@@ -55,4 +55,8 @@
     &__heart {
     }
   }
+
+  @include laptop-design {
+    flex-basis: 48%;
+  }
 }

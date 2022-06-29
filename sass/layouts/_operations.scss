@@ -8,4 +8,14 @@
 
   &__rows {
   }
+
+  @include laptop-design {
+    max-width: 90%;
+    margin: 0 auto;
+    border-radius: 30px;
+    padding: 20px;
+    &__rows {
+      display: flex;
+    }
+  }
 }

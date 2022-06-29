@@ -18,4 +18,19 @@
     font-size: 20px;
     color: $alt1;
   }
+
+  @include laptop-design {
+    // background-color: white;
+    // text-align: left;
+
+    &__title {
+      margin-top: 15px;
+      font-size: 40px;
+    }
+    &__subtitle {
+      padding-bottom: 15px;
+      font-size: 25px;
+      color: $alt1;
+    }
+  }
 }

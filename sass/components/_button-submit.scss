@@ -15,4 +15,8 @@
   border-radius: 35px;
   border: 0px;
   @include small-shadow;
+
+  @include laptop-design {
+    font-size: 22px;
+  }
 }

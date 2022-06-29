@@ -33,6 +33,7 @@ body {
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f6f6f6;
 }
 
 a {
@@ -78,6 +79,12 @@ h5 {
   font-size: 18px;
   padding-right: 15px;
 }
+@media screen and (min-width: 992px) {
+  .banner-location {
+    color: white;
+    background: #99e2d0;
+  }
+}
 
 .button-submit {
   background: linear-gradient(170deg, rgba(255, 121, 218, 0.8) 0%, rgba(215, 108, 219, 0.8) 40%, rgba(170, 94, 220, 0.8) 80%, rgba(155, 89, 220, 0.8) 100%);
@@ -91,11 +98,17 @@ h5 {
   border: 0px;
   box-shadow: 0px 10px 20px 5px lightgrey;
 }
+@media screen and (min-width: 992px) {
+  .button-submit {
+    font-size: 22px;
+  }
+}
 
 .operation-row {
   background-color: #f6f6f6;
   height: 90px;
   width: 90%;
+  max-width: 500px;
   margin: 0 auto;
   margin-bottom: 30px;
   display: flex;
@@ -130,6 +143,11 @@ h5 {
 }
 .operation-row__text {
   font-size: 18px;
+}
+@media screen and (min-width: 992px) {
+  .operation-row {
+    flex-basis: 30%;
+  }
 }
 
 .restaurant-card {
@@ -180,6 +198,12 @@ h5 {
   color: #353535;
   font-weight: 100;
 }
+@media screen and (min-width: 992px) {
+  .restaurant-card {
+    flex-basis: 48%;
+  }
+}
+
 .menu-card {
   border-radius: 20px;
   flex-basis: 85%;
@@ -272,6 +296,9 @@ h5 {
   background-color: #f6f6f6;
   max-width: 100%;
   height: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  box-shadow: 0px 10px 20px 5px lightgrey;
 }
 
 .hearts {
@@ -310,43 +337,69 @@ h5 {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid gray;
   height: 60px;
+  background-color: white;
+  max-width: 1600px;
+  margin: 0 auto;
+  position: relative;
 }
 .header__arrow {
   position: absolute;
   left: 5%;
+  font-size: 25px;
 }
-.header__arrow svg {
-  color: black;
-  font-size: 30px;
+@media screen and (min-width: 992px) {
+  .header {
+    border: 1px solid #eaeaea;
+  }
+  .header__arrow {
+    left: 30%;
+  }
 }
 
 .footer {
   background-color: #353535;
   color: white;
   padding-top: 5px;
-  padding-left: 20px;
   font-weight: 500;
   font-size: 18;
   display: flex;
   flex-direction: column;
+  max-width: 1600px;
+  margin: 0 auto;
   padding-bottom: 20px;
 }
 .footer__title {
   font-size: 20px;
+  padding-left: 20px;
   margin-bottom: 15px;
 }
-.footer__text {
+.footer__links {
+  padding-left: 20px;
+}
+.footer__links__link {
   margin: 5px;
 }
-.footer__text span {
+.footer__links__link span {
   padding-left: 15px;
 }
-.footer__text a {
+.footer__links__link a {
   text-decoration: none;
   color: white;
   margin-left: 0;
+}
+@media screen and (min-width: 992px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer__links {
+    display: flex;
+  }
+  .footer__links__link {
+    margin-right: 50px;
+  }
 }
 
 .banner img {
@@ -368,6 +421,18 @@ h5 {
 .operations__title {
   padding-bottom: 10px;
 }
+@media screen and (min-width: 992px) {
+  .operations {
+    max-width: 90%;
+    margin: 0 auto;
+    border-radius: 30px;
+    padding: 20px;
+  }
+  .operations__rows {
+    display: flex;
+  }
+}
+
 .restaurants {
   padding-top: 30px;
   padding-bottom: 50px;
@@ -376,6 +441,15 @@ h5 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+@media screen and (min-width: 992px) {
+  .restaurants {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .restaurants__cards {
+    justify-content: space-between;
+  }
 }
 
 .reserve {
@@ -399,13 +473,24 @@ h5 {
   font-size: 20px;
   color: #353535;
 }
+@media screen and (min-width: 992px) {
+  .reserve__title {
+    margin-top: 15px;
+    font-size: 40px;
+  }
+  .reserve__subtitle {
+    padding-bottom: 15px;
+    font-size: 25px;
+    color: #353535;
+  }
+}
 
 .menu {
   border-radius: 30px 30px 0px 0px;
   transform: translateY(-50px);
   background-color: #f6f6f6;
   padding-bottom: 20px;
-  max-width: 800px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 .menu__title {
@@ -488,6 +573,8 @@ h5 {
 }
 @media screen and (min-width: 768px) {
   .menu {
+    border-radius: 30px;
+    opacity: 0.93;
     transform: translateY(0px);
   }
 }
@@ -496,7 +583,8 @@ h5 {
   .delice-des-sens {
     background-image: url("./../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
     background-size: cover;
-    padding: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 
