@@ -83,4 +83,8 @@
       width: 200px;
     }
   }
+
+  @include tablet-design {
+    transform: translateY(0px);
+  }
 }
