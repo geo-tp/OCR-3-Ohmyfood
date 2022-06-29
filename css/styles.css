@@ -35,6 +35,53 @@
     transform: translateY(0px);
   }
 }
+@keyframes loading-disappear {
+  from {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-30px);
+    visibility: hidden;
+  }
+}
+@keyframes loading-anim {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes coli1 {
+  0% {
+    transform: rotate(-45deg) translateX(0px);
+    opacity: 0.7;
+  }
+  100% {
+    transform: rotate(-45deg) translateX(-45px);
+    opacity: 0;
+  }
+}
+@keyframes coli2 {
+  0% {
+    transform: rotate(45deg) translateX(0px);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(45deg) translateX(-45px);
+    opacity: 0.7;
+  }
+}
+@keyframes pulse {
+  0% {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -348,6 +395,67 @@ h5 {
   opacity: 1;
   transform: scale(1);
   animation: heart-beat 800ms linear;
+}
+
+.loading {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: #f6f6f6;
+  z-index: 50;
+  animation: loading-disappear 1s;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+}
+.loading__container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  border-radius: 40px;
+}
+.loading__container__logo {
+  display: inline-block;
+  margin: 8px;
+  border-radius: 30px;
+  padding-bottom: 25px;
+  animation: pulse 600ms alternate-reverse;
+  animation-iteration-count: 4;
+}
+.loading__container__logo img {
+  width: 100%;
+  min-width: 150px;
+}
+.loading__container__loader {
+  width: 0;
+  height: 15px;
+  display: inline-block;
+  position: relative;
+  background: linear-gradient(170deg, rgba(255, 121, 218, 0.8) 0%, rgba(215, 108, 219, 0.8) 40%, rgba(170, 94, 220, 0.8) 80%, rgba(155, 89, 220, 0.8) 100%);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  animation: loading-anim 2.5s linear;
+  animation-fill-mode: forwards;
+  border-radius: 10px;
+}
+.loading__container__loader::after, .loading__container__loader::before {
+  content: "";
+  width: 8px;
+  height: 6px;
+  background: linear-gradient(170deg, rgba(255, 121, 218, 0.8) 0%, rgba(215, 108, 219, 0.8) 40%, rgba(170, 94, 220, 0.8) 80%, rgba(155, 89, 220, 0.8) 100%);
+  position: absolute;
+  top: 9px;
+  right: -2px;
+  opacity: 0;
+  transform: rotate(-45deg) translateX(0px);
+  box-sizing: border-box;
+  animation: coli1 0.3s linear infinite;
+}
+.loading__container__loader::before {
+  top: -4px;
+  transform: rotate(45deg);
+  animation: coli2 0.3s linear infinite;
 }
 
 .header {

@@ -8,6 +8,14 @@ $alt3: #008766;
 $alt4: #f6f6f6;
 $alt5: #f5edff;
 
+$gradient1: linear-gradient(
+  170deg,
+  rgba(255, 121, 218, 0.8) 0%,
+  rgba(215, 108, 219, 0.8) 40%,
+  rgba(170, 94, 220, 0.8) 80%,
+  rgba(155, 89, 220, 0.8) 100%
+);
+
 $breakpoints: (
   mobile: 768px,
   tablet: 992px,
