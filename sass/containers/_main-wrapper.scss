@@ -6,5 +6,7 @@
   height: 100%;
   max-width: $max-resolution;
   margin: 0 auto;
-  @include small-shadow;
+  // border-left: 1px solid gray;
+  // border-right: 1px solid gray;
+  // @include small-shadow;
 }

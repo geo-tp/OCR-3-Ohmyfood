@@ -34,13 +34,19 @@
 
   @include laptop-design {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
+    background-color: $alt4;
+    color: black;
 
     &__links {
       display: flex;
       &__link {
         margin-right: 50px;
+
+        & a {
+          color: black;
+        }
       }
     }
   }
