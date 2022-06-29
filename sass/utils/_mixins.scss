@@ -3,15 +3,15 @@
 }
 
 @mixin small-shadow {
-  box-shadow: 0px 10px 20px 5px lightgrey;
+  box-shadow: 0px 10px 20px 5px darken($alt4, 15%);
 }
 
 @mixin medium-shadow {
-  box-shadow: 0px 20px 30px 5px darken(lightgrey, 10%);
+  box-shadow: 0px 20px 30px 5px darken($alt4, 25%);
 }
 
 @mixin big-shadow {
-  box-shadow: 0px 20px 30px 5px darken(lightgrey, 10%);
+  box-shadow: 0px 20px 30px 10px darken($alt4, 35%);
 }
 
 @mixin image-shadow {

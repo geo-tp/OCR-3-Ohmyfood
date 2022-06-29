@@ -1,16 +1,25 @@
 @keyframes heart-beat {
   10% {
-    transform: scale(1.2);
+    transform: scale(0.4);
   }
 
   20% {
-    transform: scale(1.05);
+    transform: scale(0.6);
   }
+
   40% {
-    transform: scale(1.2);
+    transform: scale(0.8);
+  }
+
+  50% {
+    transform: scale(1.05);
   }
 
   60% {
+    transform: scale(1.2);
+  }
+
+  70% {
     transform: scale(1.05);
   }
 

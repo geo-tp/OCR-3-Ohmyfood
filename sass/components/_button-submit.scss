@@ -21,7 +21,7 @@
   @include small-shadow;
 
   &:hover {
-    @include big-shadow;
+    @include medium-shadow;
     opacity: 0.85;
     transform: translateY(-5px);
   }
