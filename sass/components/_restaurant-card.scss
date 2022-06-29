@@ -5,6 +5,12 @@
   border-radius: 20px;
   @include small-shadow;
   margin-bottom: 20px;
+  transition: 300ms all;
+
+  &:hover {
+    @include big-shadow;
+    transform: scale(1.005);
+  }
 
   &__image {
     flex-basis: 70%;
@@ -48,7 +54,7 @@
         margin-top: 5px;
         margin-bottom: 10px;
         color: $alt1;
-        font-weight: 100;
+        font-weight: 300;
       }
     }
 
