@@ -1,2 +1,8 @@
 .homepage {
+  @include laptop-design {
+    .footer {
+      background-color: $alt1;
+      color: $alt4;
+    }
+  }
 }

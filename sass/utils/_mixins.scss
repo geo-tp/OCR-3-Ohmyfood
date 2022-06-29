@@ -10,6 +10,10 @@
   box-shadow: 0px 20px 30px 5px darken(lightgrey, 10%);
 }
 
+@mixin big-shadow {
+  box-shadow: 0px 20px 30px 5px darken(lightgrey, 10%);
+}
+
 @mixin image-shadow {
   box-shadow: 0px 20px 30px 5px rgba(0, 0, 0, 0.5);
 }

@@ -49,5 +49,21 @@
         }
       }
     }
+
+    &--darker {
+      background-color: $alt1;
+      color: $alt4;
+
+      &__links {
+        display: flex;
+        &__link {
+          margin-right: 50px;
+
+          & a {
+            color: $alt4;
+          }
+        }
+      }
+    }
   }
 }
