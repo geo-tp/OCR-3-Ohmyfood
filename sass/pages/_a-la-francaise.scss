@@ -1,0 +1,8 @@
+.a-la-francaise {
+  @include laptop-design {
+    background-image: url("./../images/restaurants/large/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}

@@ -742,6 +742,15 @@ h5 {
 }
 
 @media screen and (min-width: 992px) {
+  .la-palette-du-gout {
+    background-image: url("./../images/restaurants/large/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 992px) {
   .homepage .footer {
     background-color: #353535;
     color: #f6f6f6;
