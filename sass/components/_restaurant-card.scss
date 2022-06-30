@@ -64,6 +64,7 @@
 
   @include laptop-design {
     flex-basis: 48%;
+    margin-bottom: 70px;
 
     &__image {
       & img {

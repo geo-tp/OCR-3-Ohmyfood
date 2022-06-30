@@ -13,7 +13,9 @@
     max-width: 90%;
     margin: 0 auto;
     border-radius: 30px;
-    padding: 20px;
+    &__title {
+      padding-left: 15px;
+    }
     &__rows {
       display: flex;
     }

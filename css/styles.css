@@ -283,6 +283,7 @@ h5 {
 @media screen and (min-width: 992px) {
   .restaurant-card {
     flex-basis: 48%;
+    margin-bottom: 70px;
   }
   .restaurant-card__image img {
     height: 400px;
@@ -300,6 +301,7 @@ h5 {
   text-overflow: ellipsis;
   overflow: hidden;
   position: relative;
+  background-color: white;
 }
 .menu-card:hover .menu-card__infos {
   max-width: 80%;
@@ -588,7 +590,9 @@ h5 {
     max-width: 90%;
     margin: 0 auto;
     border-radius: 30px;
-    padding: 20px;
+  }
+  .operations__title {
+    padding-left: 15px;
   }
   .operations__rows {
     display: flex;
@@ -659,7 +663,6 @@ h5 {
   display: flex;
   justify-content: space-between;
   width: 90%;
-  margin: 0 auto;
   align-items: center;
   padding: 20px;
 }
