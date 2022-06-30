@@ -751,6 +751,24 @@ h5 {
 }
 
 @media screen and (min-width: 992px) {
+  .a-la-francaise {
+    background-image: url("./../images/restaurants/large/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .la-note-enchantee {
+    background-image: url("./../images/restaurants/large/stil-u2Lp8tXIcjw-unsplash.jpg");
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 992px) {
   .homepage .footer {
     background-color: #353535;
     color: #f6f6f6;
