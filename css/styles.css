@@ -297,11 +297,15 @@ h5 {
   margin-bottom: 20px;
   border: 1px solid #eaeaea;
   display: flex;
-  box-shadow: 0px 5px 15px 5px #e0e0e0;
   text-overflow: ellipsis;
   overflow: hidden;
   position: relative;
   background-color: white;
+  transition: all 500ms;
+  box-shadow: 0px 5px 15px 5px #e0e0e0;
+}
+.menu-card:hover {
+  box-shadow: 0px 10px 20px 5px #d0d0d0;
 }
 .menu-card:hover .menu-card__infos {
   max-width: 80%;

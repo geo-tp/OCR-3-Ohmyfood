@@ -5,13 +5,15 @@
   margin-bottom: 20px;
   border: 1px solid $alt2;
   display: flex;
-  @include tiny-shadow;
   text-overflow: ellipsis;
   overflow: hidden;
   position: relative;
   background-color: white;
+  transition: all 500ms;
+  @include tiny-shadow;
 
   &:hover {
+    @include small-shadow;
     & .menu-card__infos {
       max-width: 80%;
     }
