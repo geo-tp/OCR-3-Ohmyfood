@@ -671,6 +671,7 @@ h5 {
   display: flex;
   justify-content: space-between;
   width: 90%;
+  margin: 0 auto;
   align-items: center;
   padding: 20px;
 }
