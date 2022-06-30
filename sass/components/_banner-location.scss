@@ -1,23 +1,36 @@
 .banner-location {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: $alt2;
-  color: $alt1;
+  padding-top: 20px;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $alt1;
+    &__city {
+      font-weight: bold;
+      padding: 5px;
+      font-size: 18px;
+    }
 
-  &__city {
-    font-weight: bold;
-    padding: 5px;
-    font-size: 18px;
-  }
-
-  &__icon {
-    font-size: 18px;
-    padding-right: 15px;
+    &__icon {
+      font-size: 18px;
+      padding-right: 15px;
+    }
   }
 
   @include laptop-design {
-    color: white;
-    background: $tertiary;
+    background-color: $alt4;
+
+    &__container {
+      color: white;
+      background: $tertiary;
+      max-width: 90%;
+      margin: 0 auto;
+      margin-top: 30px;
+      border-radius: 30px;
+      &__city {
+        font-size: 24px;
+      }
+    }
   }
 }

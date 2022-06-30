@@ -64,5 +64,11 @@
 
   @include laptop-design {
     flex-basis: 48%;
+
+    &__image {
+      & img {
+        height: 400px;
+      }
+    }
   }
 }
