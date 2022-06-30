@@ -1,11 +1,5 @@
 .button-submit {
-  background: linear-gradient(
-    170deg,
-    rgba(255, 121, 218, 0.8) 0%,
-    rgba(215, 108, 219, 0.8) 40%,
-    rgba(170, 94, 220, 0.8) 80%,
-    rgba(155, 89, 220, 0.8) 100%
-  );
+  background: $gradient1;
   padding: 15px;
   padding-left: 20px;
   padding-right: 20px;
