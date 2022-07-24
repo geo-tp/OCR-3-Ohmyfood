@@ -534,8 +534,8 @@ h5 {
 .footer__links__link {
   margin: 5px;
 }
-.footer__links__link span {
-  padding-left: 15px;
+.footer__links__link i {
+  margin-right: 10px;
 }
 .footer__links__link a {
   text-decoration: none;
