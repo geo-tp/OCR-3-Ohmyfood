@@ -1,6 +1,7 @@
 .a-la-francaise {
   @include laptop-design {
     background-image: url("./../images/restaurants/large/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+    display: absolute;
     background-size: cover;
     padding-top: 50px;
     padding-bottom: 50px;
